@@ -7,7 +7,7 @@
             I am fueled by inextinguishable passion for coding, devoting to creating captivating web experiences.
             <br>
             <br>
-            Outside of web development, you’ll find me working my day job as a Digital Shopper at Walmart, playing video games, playing the guitar, reading (which I do a lot), or serving at my church.
+            Outside of web development, you’ll find me working my day job as a Digital Shopper at Walmart, playing video games, soccer, or the guitar, reading (which I do a lot), or serving at my church.
         </p>
         <h1 class="mt-20 font-medium text-6xl text-primary-light">Skills</h1>
 

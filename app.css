@@ -9,6 +9,7 @@ html {
     background-color: white;
     color: black;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
 
 .dark {

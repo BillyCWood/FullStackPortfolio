@@ -5,6 +5,12 @@ import { useDark } from '@vueuse/core';
 const isDark = useDark();
 
 const isScrolled = ref(false);
+const isOpen = ref(false);
+
+const toggleNav = () => {
+    isOpen.value = !isOpen.value;
+    console.log(isOpen.value);
+}
 
 window?.addEventListener('scroll', function(e) {
     
@@ -17,8 +23,8 @@ window?.addEventListener('scroll', function(e) {
     <div id="NavBar" 
         class="
         fixed w-full max-w-[1110px] left-0 right-0
-        flex items-center justify-between mx-auto mt-5
-        rounded-full px-5 py-3 z-10 transition-all duration-300"
+        flex items-center justify-between mx-auto lg:mt-5
+        lg:rounded-full px-5 py-3 z-10 transition-all duration-300"
         :class="{'bg-primary-light dark:bg-primary-dark shadow-sm shadow-black dark:shadow-white': isScrolled}"
     >
         <button>
@@ -27,11 +33,19 @@ window?.addEventListener('scroll', function(e) {
             <NuxtImg v-if="isDark" src="/BillyWoodLogo_fill_white.png" width="88" />
         </button>
         
-        <div class="flex gap-x-6 text-2xl ">
+        <div class="hidden lg:flex gap-x-6 text-2xl">
             <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark" :class="{'text-white':isScrolled}">about</button>
             <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark" :class="{'text-white':isScrolled}">work</button>
             <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark" :class="{'text-white':isScrolled}">contact</button>
             <ThemeToggle />
         </div>
+
+        <div class="flex flex-col gap-y-2 p-3 lg:hidden hover:cursor-pointer overflow-hidden" @click="toggleNav">
+            <span class="w-10 border-b-2 border-black dark:border-white transition-transform duration-1000 -translate-y-10 translate-x-10 -rotate-45" :class="{'translate-y-[15px] -translate-x-[1px]':isOpen, 'border-white':isScrolled}" />
+            <span class="w-10 border-b-2 border-black dark:border-white transition-transform duration-1000" :class="{'translate-x-14':isOpen, 'border-white':isScrolled}" />
+            <span class="w-10 border-b-2 border-black dark:border-white transition-transform duration-1000" :class="{'rotate-45 -translate-y-1':isOpen, 'border-white':isScrolled}" />
+            <span class="w-7 border-b-2 border-black dark:border-white transition-transform duration-1000" :class="{'-translate-x-12':isOpen, 'border-white':isScrolled}" />
+        </div>
+
     </div>
 </template>

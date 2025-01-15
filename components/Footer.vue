@@ -7,10 +7,10 @@ const isDark = useDark();
     <footer class="
         absolute bottom-0 left-0 z-[1]
         w-full h-16 bg-primary-light dark:bg-primary-dark
-        flex justify-between px-5 md:px-16 lg:px-32 2xl:px-64 items-center
+        flex justify-between py-10 px-5 md:px-16 xl:px-36 2xl:px-64 items-center
         text-white
     ">
-        <p class="font-thin">This site was made using Vue/Nuxt and TailwindCSS</p>
+        <p class="font-thin max-lg:max-w-60">This site was made using Vue/Nuxt and TailwindCSS</p>
         <div class="flex gap-x-6">
             <a href="https://github.com/BillyCWood" target="_blank" class="group">
                 <div class="flex gap-x-1 items-center">

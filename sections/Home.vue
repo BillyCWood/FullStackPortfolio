@@ -27,10 +27,10 @@ import Button from '~/components/Button.vue';
             <NuxtImg
                 src="/Billy-GBC-headshot.png"
                 width="261" height="262" alt="Billy Wood Photo"
-                class="rounded-full self-center translate-x-7 xl:translate-x-16 2xl:-translate-x-14 border-secondary-light border-[3px] z-[1] 2xl:shadow-black 2xl:shadow-xl dark:2xl:shadow-primary-light dark:2xl:shadow-xl"
+                class="rounded-full self-center translate-x-8 xl:translate-x-16 2xl:-translate-x-14 border-secondary-light border-[3px] z-[1] 2xl:shadow-black 2xl:shadow-xl dark:2xl:shadow-primary-light dark:2xl:shadow-xl"
              />
-            <span class="min-w-[275px] min-h-[275px] 2xl:min-w-[261px] 2xl:min-h-[262px] bg-white rounded-full self-center -translate-x-[240px] xl:-translate-x-[204px] 2xl:-translate-x-72" />
-            <div class="absolute bottom-1/4 left-10 flex max-2xl:gap-x-10 2xl:gap-y-10 2xl:flex-col 2xl:bottom-1/2 2xl:left-0 2xl:translate-x-80 2xl:translate-y-20 self-center">
+            <span class="min-w-[275px] min-h-[275px] 2xl:min-w-[261px] 2xl:min-h-[262px] bg-white rounded-full self-center -translate-x-[236px] xl:-translate-x-[204px] 2xl:-translate-x-72" />
+            <div class="absolute bottom-1/4 left-8 xl:left-16 flex max-2xl:gap-x-10 2xl:gap-y-10 2xl:flex-col 2xl:bottom-1/2 2xl:left-0 2xl:translate-x-80 2xl:translate-y-20 self-center">
                 <a id="github" href="https://github.com/BillyCWood" target="_blank" class="group">
                     <div class="flex gap-x-1 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" viewBox="0 0 496 512">
@@ -70,9 +70,9 @@ import Button from '~/components/Button.vue';
             <NuxtImg
                 src="/Billy-GBC-headshot.png"
                 width="261" height="262" alt="Billy Wood Photo"
-                class="border-secondary-light border-[3px]"
+                class="border-secondary-light border-[3px] mx-auto"
              />
-            <div id="socials" class="flex mt-10 gap-x-10">
+            <div id="socials" class="flex mt-10 gap-x-10 max-w-96 mx-auto justify-center">
                 <a href="https://github.com/BillyCWood" target="_blank" class="group">
                     <div class="flex gap-x-1 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 496 512">

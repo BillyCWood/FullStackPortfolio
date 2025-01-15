@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-[75vh] pt-60 w-full text-lg lg:text-2xl max-xl:px-10">
+    <div class="min-h-[75vh] pt-60 w-full text-lg lg:text-2xl max-xl:px-5">
         <h1 class="font-medium text-4xl lg:text-6xl text-primary-light">Who Am I?</h1>
         <p class="mt-5 font-extralight">
             Hi, I’m Billy Wood, and I’m a full-stack web developer based in Bozeman, Montana.

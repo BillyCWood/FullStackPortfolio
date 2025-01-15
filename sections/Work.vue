@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+import Button from '../components/Button.vue';
+
 import { ref } from 'vue';
 import { jobs, projects } from '~/constants';
 
@@ -20,9 +22,10 @@ const styledProj = (index: number) => ({
     <div class="grid grid-cols-2 grid-rows-2 min-h-screen pt-32 text-lg lg:text-xl font-light gap-y-10 max-xl:px-10">
         <div id="exp-list" class="">
             <h1 class="text-primary-light text-4xl lg:text-6xl font-medium">Experience</h1>
-            <ul class="flex flex-col gap-y-8 mt-10 border-l-2 border-secondary-light">
+            <ul class="flex flex-col gap-y-8 my-10 border-l-2 border-secondary-light">
                 <li v-for="(job, index) in jobs" :key="index" class="hover:cursor-pointer py-3 pl-2 max-w-64 lg:max-w-80" :class="styledJob(index)" @click="selectedJob = index">{{ job.name }}</li>
             </ul>
+            <Button message="View Sites" />
 
         </div>
 
@@ -45,9 +48,10 @@ const styledProj = (index: number) => ({
 
         <div id="proj-list">
             <h1 class="text-primary-light text-4xl lg:text-6xl font-medium">Projects</h1>
-            <ul class="flex flex-col gap-y-8 mt-10 border-l-2 border-secondary-light">
+            <ul class="flex flex-col gap-y-8 my-10 border-l-2 border-secondary-light">
                 <li v-for="(project, index) in projects" :key="index" class="hover:cursor-pointer py-3 pl-2 max-w-44 lg:max-w-60" :class="styledProj(index)" @click="selectedProj = index">{{ project.name }}</li>
             </ul>
+            <Button message="View Projects" />
         </div>
         <div id="proj-description" class="flex flex-col gap-y-4 pt-28">
             <i class="font-extralight">{{ projects[selectedProj].time }}</i>

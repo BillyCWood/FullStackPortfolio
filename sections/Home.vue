@@ -14,6 +14,7 @@ import Button from '~/components/Button.vue';
                     presence plays a <i class="font-light">vital, non-negotiable</i> role in the
                     <i class="font-light">success</i> and <i class="font-light">sustainability</i> of a business.
                     <br>
+                    <br>
                     I help local businesses<br>
                     <i class="font-light">compete, attract, and thrive</i> on the digital frontier.
                 </p>

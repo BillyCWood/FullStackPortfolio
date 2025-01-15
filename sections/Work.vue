@@ -17,7 +17,7 @@ const styledProj = (index: number) => ({
 </script>
 
 <template>
-    <div class="grid grid-cols-2 grid-rows-2 min-h-screen pt-32 text-lg lg:text-xl font-light gap-y-10 max-lg:px-10">
+    <div class="grid grid-cols-2 grid-rows-2 min-h-screen pt-32 text-lg lg:text-xl font-light gap-y-10 max-xl:px-10">
         <div id="exp-list" class="">
             <h1 class="text-primary-light text-4xl lg:text-6xl font-medium">Experience</h1>
             <ul class="flex flex-col gap-y-8 mt-10 border-l-2 border-secondary-light">

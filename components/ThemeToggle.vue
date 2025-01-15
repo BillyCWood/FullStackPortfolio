@@ -8,8 +8,8 @@ const toggleDark = useToggle(isDark);
 
 <template>
   <button @click="toggleDark()">
-    <span class="flex h-8 w-[60px] items-center rounded-full p-1 duration-200" :class="{ 'bg-primary-light': isDark, 'bg-secondary-light justify-end': !isDark }">
-      <span class="h-6 w-6 rounded-full bg-white duration-200" />
+    <span class="flex h-8 w-[60px] items-center rounded-full p-1" :class="{ 'bg-primary-light': isDark, 'bg-secondary-light justify-end': !isDark }">
+      <span class="h-6 w-6 rounded-full bg-white" />
     </span>
   </button>
   

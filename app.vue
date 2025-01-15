@@ -17,7 +17,7 @@ import NavBar from "./components/NavBar.vue";
       <NavBar />
 
       <Home />
-    <div class="max-w-[1064px] mx-auto">
+    <div class="max-w-[1100px] mx-auto">
       <About />
       <Work />
       <Contact />

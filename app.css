@@ -12,5 +12,6 @@ html {
 }
 
 .dark {
-    @apply bg-dark text-white;
+    background-color: #0B0D16;
+    color:white
 }

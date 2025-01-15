@@ -6,7 +6,7 @@ const isDark = useDark();
 
 const isScrolled = ref(false);
 
-window.addEventListener('scroll', function(e) {
+window?.addEventListener('scroll', function(e) {
     
     isScrolled.value = (this.window.scrollY > 32);
 })
@@ -27,10 +27,10 @@ window.addEventListener('scroll', function(e) {
             <NuxtImg v-if="isDark" src="/BillyWoodLogo_fill_white.png" width="88" />
         </button>
         
-        <div class="flex gap-x-6">
-            <button class="text-2xl" :class="{'text-white':isScrolled}">about</button>
-            <button class="text-2xl" :class="{'text-white':isScrolled}">work</button>
-            <button class="text-2xl" :class="{'text-white':isScrolled}">contact</button>
+        <div class="flex gap-x-6 text-2xl ">
+            <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark" :class="{'text-white':isScrolled}">about</button>
+            <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark" :class="{'text-white':isScrolled}">work</button>
+            <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark" :class="{'text-white':isScrolled}">contact</button>
             <ThemeToggle />
         </div>
     </div>

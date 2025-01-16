@@ -10,7 +10,7 @@ const isDark = useDark();
         flex justify-between py-10 px-5 md:px-16 xl:px-36 2xl:px-64 items-center
         text-white
     ">
-        <p class="font-thin max-lg:max-w-60">This site was made using Vue/Nuxt and TailwindCSS</p>
+        <p class="font-thin text-sm max-lg:max-w-60">This site was made using Vue/Nuxt and TailwindCSS</p>
         <div class="flex gap-x-6">
             <a href="https://github.com/BillyCWood" target="_blank" class="group">
                 <div class="flex gap-x-1 items-center">

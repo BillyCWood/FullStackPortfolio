@@ -4,7 +4,7 @@
         <p class="mt-5 font-extralight">
             Hi, I’m Billy Wood, and I’m a full-stack web developer based in Bozeman, Montana.
             <br>
-            I am fueled by inextinguishable passion for coding, devoting to creating captivating web experiences.
+            I am fueled by inextinguishable passion for coding, devoting myself to creating captivating web experiences.
             <br>
             <br>
             Outside of web development, you’ll find me working my day job as a Digital Shopper at Walmart, playing video games, soccer, or the guitar, reading (which I do a lot), or serving at my church.

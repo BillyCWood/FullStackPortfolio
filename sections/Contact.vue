@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen">
+    <div class="min-h-screen mb-20">
         <div class="text-center">
             <h1 class="font-medium text-4xl lg:text-6xl text-primary-light mb-5">Let's Connect</h1>
             <div class="text-lg lg:text-xl">email: billyc.wood4@gmail.com</div>

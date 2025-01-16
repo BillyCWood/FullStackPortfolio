@@ -47,7 +47,7 @@ window?.addEventListener('scroll', function(e) {
             <span class="w-7 border-b-2 border-black dark:border-white transition-transform duration-1000" :class="{'-translate-x-12':isOpen, 'border-white':isScrolled}" />
         </div>
 
-        <div :class="{'hidden': !isOpen, 'flex flex-col items-end float-right absolute right-0 top-20 text-white bg-primary-light dark:bg-primary-dark border-t-[1px] border-white w-screen h-screen translate-x-0':isOpen}">
+        <div class="lg:hidden" :class="{'hidden': !isOpen, 'flex flex-col items-end float-right absolute right-0 top-20 text-white bg-primary-light dark:bg-primary-dark border-t-[1px] border-white w-screen h-screen translate-x-0':isOpen}">
             <div class="flex flex-col mt-10 mr-7 text-xl gap-y-4">
                 <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark text-right p-3" :class="{'text-white':isScrolled}">about</button>
                 <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark  text-right p-3" :class="{'text-white':isScrolled}">work</button>

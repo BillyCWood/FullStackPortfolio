@@ -11,6 +11,11 @@ export default defineNuxtConfig({
     },
   },
   image:{},
+  app: {
+    head: {
+      link: [{ rel: 'icon', type:'image/x-icon', href:'/favicon.ico' }]
+    }
+  },
 
   modules: ['@nuxt/image'],
 })

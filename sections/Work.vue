@@ -59,7 +59,7 @@ const styledProj = (index: number) => ({
 
         <div id="proj-list" class="mt-28">
             <h1 class="text-primary-light text-4xl lg:text-6xl font-medium">Projects</h1>
-            <ul class="flex max-lg:gap-x-7 lg:flex-col lg:gap-y-8 my-10 lg:border-l-2 border-secondary-light max-lg:overflow-scroll">
+            <ul class="flex max-lg:gap-x-7 lg:flex-col lg:gap-y-8 my-10 lg:border-l-2 border-secondary-light max-lg:overflow-x-scroll">
                 <li v-for="(project, index) in projects" :key="index" class="hover:cursor-pointer p-3 lg:max-w-60" :class="styledProj(index)" @click="selectedProj = index">{{ project.name }}</li>
             </ul>
             <a :href="projects[selectedProj].url" target="_blank" class="hidden lg:flex">

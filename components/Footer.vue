@@ -4,7 +4,7 @@ const isDark = useDark();
 </script>
 
 <template>
-    <footer class="
+    <footer class=" mt-10
         absolute bottom-0 left-0 z-[1]
         w-full h-16 bg-primary-light dark:bg-primary-dark
         flex justify-between py-10 px-5 md:px-16 xl:px-36 2xl:px-64 items-center

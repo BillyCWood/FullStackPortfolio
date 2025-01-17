@@ -6,7 +6,7 @@ import Button from '~/components/Button.vue';
     <div id="hero" class="hidden lg:flex w-full min-h-screen">
         <div id="hero-left" class="basis-2/3 2xl:basis-[58%] content-center justify-items-center px-0">
             <!-- DO NOT REMOVE THE DIV BELOW -->
-            <div class="pl-5">
+            <div class="w-fit mx-auto pl-5">
                 <h1 class="text-4xl xl:text-6xl font-medium">Billy Wood</h1>
                 <h2 class="text-lg xl:text-2xl font-light">Full-Stack Web Developer in Bozeman, MT</h2>
                 <p class="mt-10 text-lg xl:text-2xl font-extralight max-w-[550px]">

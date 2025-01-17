@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ThemeToggle from './ThemeToggle.vue';
-import { ref } from 'vue';
-import { useDark } from '@vueuse/core';
+import { ref, onMounted, onUnmounted } from 'vue';
+import { useDark, useScroll } from '@vueuse/core';
 const isDark = useDark();
 
 const isScrolled = ref(false);
@@ -12,9 +12,26 @@ const toggleNav = () => {
     console.log(isOpen.value);
 }
 
-window?.addEventListener('scroll', function(e) {
-    
-    isScrolled.value = (this.window.scrollY > 32);
+const el = ref<HTMLElement | null>(null)
+const { x, y, isScrolling, arrivedState, directions } = useScroll(el, {behavior: 'smooth'})
+
+const handleScroll = (y: number) => {
+    window.scrollTo({
+        top: y,
+        left: 0,
+        behavior: 'smooth',
+    });
+}
+
+onMounted(() => {
+    window?.addEventListener('scroll', function(e) {  
+        isScrolled.value = (this.window.scrollY > 32);
+    })
+})
+onUnmounted(() => {
+    window?.removeEventListener('scroll', function(e) {  
+        isScrolled.value = (this.window.scrollY > 32);
+    })
 })
 
 </script>
@@ -22,21 +39,21 @@ window?.addEventListener('scroll', function(e) {
 <template>
     <div id="NavBar" 
         class="
-        fixed w-full max-w-[1110px] left-0 right-0
+        fixed w-full max-w-[1200px] left-0 right-0
         flex items-center justify-between mx-auto lg:mt-5
-        lg:rounded-full px-5 py-3 z-10 transition-all duration-300"
+        lg:rounded-full px-10 py-3 z-10 transition-all duration-300"
         :class="{'bg-primary-light dark:bg-primary-dark shadow-sm shadow-black dark:shadow-white': isScrolled}"
     >
-        <button>
+        <button @click="handleScroll(0)">
             <NuxtImg v-if="!isDark && !isScrolled" src="/BillyWoodLogo_outline_black.png" width="88" />
             <NuxtImg v-if="!isDark && isScrolled" src="/BillyWoodLogo_outline_white_nofill.png" width="88" />
             <NuxtImg v-if="isDark" src="/BillyWoodLogo_fill_white.png" width="88" />
         </button>
         
         <div class="hidden lg:flex gap-x-6 text-2xl">
-            <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark" :class="{'text-white':isScrolled}">about</button>
-            <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark" :class="{'text-white':isScrolled}">work</button>
-            <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark" :class="{'text-white':isScrolled}">contact</button>
+            <button @click="handleScroll(1300)" class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark" :class="{'text-white':isScrolled}">about</button>
+            <button @click="handleScroll(2200)" class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark" :class="{'text-white':isScrolled}">work</button>
+            <button @click="handleScroll(3700)" class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark" :class="{'text-white':isScrolled}">contact</button>
             <ThemeToggle />
         </div>
 
@@ -48,9 +65,9 @@ window?.addEventListener('scroll', function(e) {
 
         <div class="lg:hidden" :class="{'hidden': !isOpen, 'flex flex-col items-end float-right absolute right-0 top-20 text-white bg-primary-light dark:bg-primary-dark border-t-[1px] border-white w-screen h-screen translate-x-0':isOpen}">
             <div class="flex flex-col mt-10 mr-7 text-xl gap-y-4">
-                <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark text-right p-3" :class="{'text-white':isScrolled}">about</button>
-                <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark  text-right p-3" :class="{'text-white':isScrolled}">work</button>
-                <button class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark  text-right p-3" :class="{'text-white':isScrolled}">contact</button>
+                <button @click="handleScroll(1100)" class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark text-right p-3" :class="{'text-white':isScrolled}">about</button>
+                <button @click="handleScroll(2000)" class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark  text-right p-3" :class="{'text-white':isScrolled}">work</button>
+                <button @click="handleScroll(3700)" class="transition-colors duration-300 hover:text-secondary-dark dark:hover:text-secondary-dark  text-right p-3" :class="{'text-white':isScrolled}">contact</button>
             </div>
             <div class="mr-10 mt-10">
                 <ThemeToggle />

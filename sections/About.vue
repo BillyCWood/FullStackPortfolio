@@ -1,9 +1,9 @@
 <template>
-    <div class="min-h-[75vh] pt-60 w-full text-lg lg:text-2xl max-xl:px-5">
+    <div class="min-h-[75vh] pt-60 w-full text-lg lg:text-2xl max-xl:px-10">
         <h1 class="font-medium text-4xl lg:text-6xl text-primary-light">Who Am I?</h1>
         <p class="mt-5 font-extralight">
             Hi, I’m Billy Wood, and I’m a full-stack web developer based in Bozeman, Montana.
-            <br>
+            <br class="max-md:hidden">
             I am fueled by inextinguishable passion for coding, devoting myself to creating captivating web experiences.
             <br>
             <br>
@@ -15,9 +15,9 @@
             <p class="text-secondary-light dark:text-secondary-dark">Languages:</p>
             <p class="font-extralight">HTML, CSS/SCSS/SASS, JavaScript, GraphQL</p>
         </div>
-        <div class="flex lg:gap-x-3">
-            <p class="text-secondary-light dark:text-secondary-dark bg-violet-400 w-fit">Libraries and Frameworks:</p>
-            <p class=" font-extralight">React, React Native, Next.js, Remix/React Router 7, Vue.js, Nuxt, TailwindCSS</p>
+        <div class="flex gap-x-3">
+            <p class="text-secondary-light dark:text-secondary-dark w-fit">Libraries & Frameworks:</p>
+            <p class=" font-extralight w-fit">React, React Native, Next.js, Remix/React Router 7, Vue.js, Nuxt, TailwindCSS</p>
         </div>
     </div>
 </template>

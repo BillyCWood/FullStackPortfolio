@@ -16,7 +16,7 @@ import NavBar from "./components/NavBar.vue";
 
       <NavBar />
 
-      <Home />
+      <Home ref="home" />
     <div class="max-w-[1100px] mx-auto">
       <About />
       <Work />

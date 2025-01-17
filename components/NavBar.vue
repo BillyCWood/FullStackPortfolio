@@ -41,8 +41,8 @@ window?.addEventListener('scroll', function(e) {
         </div>
 
         <div class="flex flex-col gap-y-2 p-3 lg:hidden hover:cursor-pointer overflow-hidden" @click="toggleNav">
-            <span class="w-10 border-b-2 border-black dark:border-white transition-transform duration-1000" :class="{'rotate-[225deg] translate-y-1':isOpen, 'border-white':isScrolled}" />
-            <span class="w-10 border-b-2 border-black dark:border-white transition-transform duration-1000" :class="{'-translate-y-[6px] -rotate-[225deg]':isOpen, 'border-white':isScrolled}" />
+            <span class="w-10 border-b-2 border-black dark:border-white transition-transform duration-1000" :class="{'rotate-[225deg] translate-y-[10px]':isOpen, 'border-white':isScrolled}" />
+            <span class="w-10 border-b-2 border-black dark:border-white transition-transform duration-1000" :class="{'-rotate-[225deg]':isOpen, 'border-white':isScrolled}" />
             <span class="w-7 border-b-2 border-black dark:border-white transition-transform duration-1000" :class="{'-translate-x-12':isOpen, 'border-white':isScrolled}" />
         </div>
 

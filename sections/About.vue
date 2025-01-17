@@ -15,8 +15,8 @@
             <p class="text-secondary-light dark:text-secondary-dark">Languages:</p>
             <p class="font-extralight">HTML, CSS/SCSS/SASS, JavaScript, GraphQL</p>
         </div>
-        <div class="flex gap-x-3">
-            <p class="text-secondary-light dark:text-secondary-dark">Libraries and Frameworks:</p>
+        <div class="flex lg:gap-x-3">
+            <p class="text-secondary-light dark:text-secondary-dark bg-violet-400 w-fit">Libraries and Frameworks:</p>
             <p class=" font-extralight">React, React Native, Next.js, Remix/React Router 7, Vue.js, Nuxt, TailwindCSS</p>
         </div>
     </div>

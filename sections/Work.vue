@@ -19,7 +19,7 @@ const styledProj = (index: number) => ({
 </script>
 
 <template>
-    <div class="grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 min-h-screen mb-40 pt-32 text-lg lg:text-xl font-light lg:gap-y-10 max-xl:px-5">
+    <div class="border-y-[1px] border-primary-light grid grid-cols-1 grid-rows-[repeat(2,_18rem_minmax(0,_25rem))] lg:grid-cols-2 lg:grid-rows-[repeat(2,_minmax(0,_30rem))] mb-28 pb-32 mt-16 pt-16 text-lg lg:text-xl font-light lg:gap-y-10 max-xl:px-5">
         <div id="exp-list" class="">
             <h1 class="text-primary-light text-4xl lg:text-6xl font-medium">Experience</h1>
             <a href="/Resume_WilliamWood_2025_NoShepherds.pdf" download="Resume_WilliamWood_2025.pdf" target="_blank" class="w-56 py-4 font-normal lg:hidden flex justify-center items-center gap-x-2 group -translate-x-3">
@@ -52,13 +52,13 @@ const styledProj = (index: number) => ({
                     <li v-for="(item, index) in jobs[selectedJob].stackDuties" :key="index">⚡{{ item }}</li>
                 </ul>
             </div>
-            <a :href="jobs[selectedJob].url" target="_blank" class="lg:hidden">
+            <a :href="jobs[selectedJob].url" target="_blank" class="lg:hidden w-56">
                 <Button message="View Site" />
             </a>
         </div>
 
 
-        <div id="proj-list" class="mt-28">
+        <div id="proj-list" class="mt-28 ">
             <h1 class="text-primary-light text-4xl lg:text-6xl font-medium">Projects</h1>
             <ul class="flex max-lg:gap-x-7 lg:flex-col lg:gap-y-8 my-10 lg:border-l-2 border-secondary-light max-lg:overflow-x-scroll">
                 <li v-for="(project, index) in projects" :key="index" class="hover:cursor-pointer p-3 lg:max-w-60" :class="styledProj(index)" @click="selectedProj = index">{{ project.name }}</li>
@@ -77,7 +77,7 @@ const styledProj = (index: number) => ({
                     <li v-for="(item, index) in projects[selectedProj].stackDuties" :key="index">⚡{{ item }}</li>
                 </ul>
             </div>
-            <a :href="projects[selectedProj].url" target="_blank" class="lg:hidden">
+            <a :href="projects[selectedProj].url" target="_blank" class="lg:hidden w-56">
                 <Button message="View Project" />
             </a>
         </div>

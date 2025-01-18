@@ -5,7 +5,7 @@ export const jobs = [
         name: 'Jillian Johnston',
         time: 'January 2025 - Present',
         description: 'Jillian Lorem ipsum dolor sit amet. Ut quae Quis eos maxime consequatur est Quis omnis. Qui maiores explicabo et illum voluptate sed similique accusantium cum aperiam velit.',
-        stackDuties: ['bullet point 1', 'bullet point 2', 'bullet point 3', 'bullet point 4'],
+        stackDuties: ['React, Remix, Shopify Hydrogen', 'Design mobile, tablet, and desktop layouts with Figma'],
         url: '#',
     },
     {

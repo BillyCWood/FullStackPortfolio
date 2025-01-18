@@ -16,6 +16,11 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type:'image/x-icon', href:'/favicon.ico' }]
     }
   },
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
+  },
 
-  modules: ['@nuxt/image'],
+  modules: ['@nuxt/image', 'nuxt-anchorscroll',],
 })

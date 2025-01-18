@@ -1,5 +1,15 @@
 <script setup lang="ts">
 import Button from '~/components/Button.vue';
+const { scrollToAnchor } = useAnchorScroll({
+  
+  toAnchor: {
+    scrollOptions:{
+        behavior: 'smooth',
+        offsetTop: -50,
+    }
+  },
+  
+});
 </script>
 
 <template>
@@ -64,7 +74,7 @@ import Button from '~/components/Button.vue';
                 I help local businesses<br>
                 <i class="font-light">compete, attract, and thrive</i> on the digital frontier.
             </p>
-            <Button message="Let's Thrive" />
+            <Button message="Let's Thrive" @click="scrollToAnchor('#contact')" />
         </div>
         <div id="bottom" class="bg-primary-light dark:bg-primary-dark w-[100vw] place-items-center py-10">
             <NuxtImg

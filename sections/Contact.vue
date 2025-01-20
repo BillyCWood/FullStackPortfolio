@@ -29,7 +29,7 @@ const mail = useMail();
 async function onSubmit(event: FormSubmitEvent<Schema>){
     console.log(event.data);
     mail.send({
-        text: 'Someone filled out the form, here\'s the info: \n\nName: ' + event.data.name + '\nemail: ' + event.data.email + '\phone: ' + event.data.phone + '\norg: ' + event.data.org + '\nMessage:\n' + event.data.msg + '',
+        text: 'Someone filled out the form, here\'s the info: \n\nName: ' + event.data.name + '\nemail: ' + event.data.email + '\nphone: ' + event.data.phone + '\norg: ' + event.data.org + '\n\nMessage:\n' + event.data.msg + '',
     })
 
     alert('Thanks for filling out the form! I received your info! :)');

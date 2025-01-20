@@ -4,8 +4,8 @@ export const jobs = [
     {
         name: 'Jillian Johnston',
         time: 'January 2025 - Present',
-        description: 'Jillian Lorem ipsum dolor sit amet. Ut quae Quis eos maxime consequatur est Quis omnis. Qui maiores explicabo et illum voluptate sed similique accusantium cum aperiam velit.',
-        stackDuties: ['React, Remix, Shopify Hydrogen', 'Design mobile, tablet, and desktop layouts with Figma'],
+        description: 'Jillian Johnston is an artist local to Bozeman, showcasing and selling her artwork to the community as well as privately teaching others how create art of their own.',
+        stackDuties: ['React, Shopify Hydrogen, Resend', 'Design mobile, tablet, and desktop layouts with Figma'],
         url: '#',
     },
     {
@@ -25,9 +25,10 @@ export const jobs = [
         description: 'A videography start up based in Bozeman, MT providing high-quality promotional video content to businesses local to the Gallatin Valley.',
         stackDuties: [
             'Next.js, TailwindCSS, Cloudinary, Resend',
-            'Improved SEO by optimizing speed metrics such as FCP, LCP, and TBT',
+            'Improved SEO by optimizing speed metrics such as FCP and TBT',
             'Managed DNS configurations and site indexing with various search engines such as Google and Bing', 
-            'Reduced bundle size and streamlined media management by using headless DAM platform Cloudinary'
+            'Reduced bundle size and streamlined media management by using headless DAM platform Cloudinary',
+            'Implemented Resend API to send emails to customer and owner upon form submission'
         ],
         url: 'https://vecavisionmedia.com/',
     },

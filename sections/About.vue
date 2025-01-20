@@ -13,11 +13,11 @@
 
         <div class="flex gap-x-3 mt-5 max-lg:mb-2">
             <p class="text-secondary-light dark:text-secondary-dark">Languages:</p>
-            <p class="font-extralight">HTML, CSS/SCSS/SASS, JavaScript, GraphQL</p>
+            <p class="font-extralight">HTML, CSS/SCSS/SASS, JavaScript, Liquid, GraphQL</p>
         </div>
         <div class="flex gap-x-3">
             <p class="text-secondary-light dark:text-secondary-dark w-fit">Libraries & Frameworks:</p>
-            <p class=" font-extralight w-fit">React, React Native, Next.js, Remix/React Router 7, Vue.js, Nuxt, TailwindCSS</p>
+            <p class=" font-extralight w-fit">React, React Native, Next.js, Vue.js, Nuxt, TailwindCSS</p>
         </div>
     </div>
 </template>

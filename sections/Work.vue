@@ -30,7 +30,7 @@ const styledProj = (index: number) => ({
                     <p class="translate-y-2 group-hover:text-secondary-light dark:group-hover:text-secondary-dark">Download Resume</p>
                 </a>
                 
-                <ul class="flex max-lg:divide-x divide-white lg:flex-col lg:gap-y-8 my-10 lg:border-l-2 border-secondary-light max-lg:overflow-x-scroll">
+                <ul class="flex max-lg:divide-x max-lg:divide-white lg:flex-col lg:gap-y-8 my-10 lg:border-l-2 border-secondary-light max-lg:overflow-x-scroll">
                     <li v-for="(job, index) in jobs" :key="index" class="hover:cursor-pointer p-3 w-fit text-nowrap " :class="styledJob(index)" @click="selectedJob = index">{{ job.name }}</li>
                 </ul>
                 <a :href="jobs[selectedJob].url" target="_blank" class="hidden lg:flex">
@@ -61,7 +61,7 @@ const styledProj = (index: number) => ({
             
             <div id="proj-list" class="max-lg:mt-36">
                 <h1 class="text-primary-light text-4xl lg:text-6xl font-medium">Projects</h1>
-                <ul class="flex max-lg:divide-x divide-white lg:flex-col lg:gap-y-8 my-10 lg:border-l-2 border-secondary-light max-lg:overflow-x-scroll">
+                <ul class="flex max-lg:divide-x max-lg:divide-white lg:flex-col lg:gap-y-8 my-10 lg:border-l-2 border-secondary-light max-lg:overflow-x-scroll">
                     <li v-for="(project, index) in projects" :key="index" class="hover:cursor-pointer p-3 w-fit text-nowrap " :class="styledProj(index)" @click="selectedProj = index">{{ project.name }}</li>
                 </ul>
                 <a :href="projects[selectedProj].url" target="_blank" class="hidden lg:flex">

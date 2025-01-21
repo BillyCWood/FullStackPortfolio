@@ -63,16 +63,17 @@ const { scrollToAnchor } = useAnchorScroll({
     </div>
 
     <div id="hero-mobile" class="flex flex-col mt-32 gap-y-36 lg:hidden">
-        <div id="top" class="mx-auto">
+        <div id="top" class="mx-auto px-5">
             <h1 class="text-4xl font-medium">Billy Wood</h1>
             <h2 class="text-lg font-light">Full-Stack Web Developer in Bozeman, MT</h2>
             <p class="mt-10 text-lg font-extralight">
-                In the ever-evolving digital landscape, an internet <br>
-                presence plays a <i class="font-light">vital, non-negotiable</i> role in the <br>
-                <i class="font-light">success</i> and <i class="font-light">sustainability</i> of a business.<br>
+                In the ever-evolving digital landscape, an internet
+                presence plays a <i class="font-light">vital,
                 <br>
-                I help local businesses<br>
-                <i class="font-light">compete, attract, and thrive</i> on the digital frontier.
+                non-negotiable</i> role in the <i class="font-light">success</i> and <i class="font-light">sustainability</i> of a business.
+                <br>
+                <br>
+                I help local businesses <i class="font-light">compete, attract, and thrive</i> on the digital frontier.
             </p>
             <Button message="Let's Thrive" @click="scrollToAnchor('#contact')" />
         </div>

@@ -23,7 +23,7 @@ const { scrollToAnchor, scrollToTop } = useAnchorScroll({
   toAnchor: {
     scrollOptions:{
         behavior: 'smooth',
-        offsetTop: -50,
+        offsetTop: -100,
     }
   },
   
